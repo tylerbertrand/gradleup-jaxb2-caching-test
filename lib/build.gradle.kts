@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("com.github.gradlecommunity.jaxb2") version "3.1.0"
+    id("jaxb2-plugin") version "local"
 }
 
 dependencies {

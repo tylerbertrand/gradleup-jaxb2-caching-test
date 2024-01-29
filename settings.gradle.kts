@@ -1,3 +1,10 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+}
+
 plugins {
     id("com.gradle.enterprise") version "3.16.1"
     id("com.gradle.common-custom-user-data-gradle-plugin") version "1.12.1"
