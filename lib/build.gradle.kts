@@ -21,5 +21,9 @@ jaxb2 {
             basePackage = "com.example.shipment"
             schema = "src/main/xsd/shiporder.xsd"
         }
+        create("generation-step-2") {
+            basePackage = "com.example.shipment.two"
+            schema = "src/main/xsd/shipordertwo.xsd"
+        }
     }
 }
