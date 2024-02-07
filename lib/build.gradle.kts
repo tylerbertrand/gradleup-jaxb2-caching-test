@@ -20,6 +20,7 @@ jaxb2 {
         create("generation-step") {
             basePackage = "com.example.shipment"
             schema = "src/main/xsd/shiporder.xsd"
+            includedBindingFiles = "somefile.xsb, someotherfile.xsb"
         }
         create("generation-step-2") {
             basePackage = "com.example.shipment.two"
