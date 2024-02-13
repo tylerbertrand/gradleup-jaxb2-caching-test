@@ -20,11 +20,17 @@ jaxb2 {
         create("generation-step") {
             basePackage = "com.example.shipment"
             schema = "src/main/xsd/shiporder.xsd"
-            includedBindingFiles = "somefile.xsb, someotherfile.xsb"
+            bindingsDir = "bindings"
+            includedBindingFiles = "somefile.xjb, someotherfile.xjb"
         }
         create("generation-step-2") {
             basePackage = "com.example.shipment.two"
+            bindingsDir = "bindings"
             schema = "src/main/xsd/shipordertwo.xsd"
+        }
+        create("generation-step-3") {
+            basePackage = "com.example.shipment.three"
+            schema = "src/main/xsd/shiporderthree.xsd"
         }
     }
 }
